@@ -84,6 +84,8 @@ img {
   outline-offset: -5px;
   list-style: none;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
 }
 
 .site-navigation-current a:not([href]) {
@@ -133,6 +135,10 @@ img {
 .site-navigation a:focus {
   color: var(--basic-black);
   opacity: 30%;
+}
+
+.map {
+  display: block;
 }
 
 /* Features */
@@ -380,7 +386,48 @@ img {
   margin-bottom: 9px;
 }
 
+.visually-hidden {
+ position: absolute;
+ clip: rect(1px, 1px, 1px, 1px);
+ padding:0;
+ border:0;
+ height: 1px;
+ width: 1px;
+ overflow: hidden;
+}
+
+.social-button {
+  width: 46px;
+  height: 48px;
+  background-color: var(--basic-light-blue);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+
+.social-button-tw {
+  background-image: url(../img/twitter.svg);
+}
+
+.social-button-fb {
+  background-image: url(../img/facebook.svg);
+}
+
+.social-button-yt {
+  background-image: url(../img/youtube.svg);
+}
+
+.footer-social {
+  outline: 0px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -1px;
+  padding-top: 7px;
+  margin: 0 auto;
+}
+
 .footer-social ul {
+  display: grid;
+  grid-template-columns: 46px 46px 46px;
+  column-gap: 6px;
   outline: 0px solid rgba(255, 0, 0, 0.7);
   list-style: none;
   padding: 0;
@@ -431,7 +478,18 @@ img {
 }
 
 .sorting {
+  outline: 1px solid #ff0000;
+  outline-offset: -1px;
   font-weight: 600;
+}
+
+.search-options h2 {
+  outline: 1px solid #ff0000;
+  outline-offset: -1px;
+}
+
+.found {
+  display: flex;
 }
 
 .sorting,
@@ -440,9 +498,21 @@ img {
   line-height: 18px;
 }
 
+.sort-types {
+  padding: 0;
+}
+
+.sort-types,
+.search-options {
+  outline: 1px solid #ff0000;
+  outline-offset: -1px;
+  display: flex;
+}
+
 .sort-types .current {
   color: var(--basic-light-blue);
   text-decoration: none;
+
 }
 
 .sort-types a {
@@ -475,6 +545,8 @@ img {
 .parameters label {
   color: var(--basic-white);
 }
+
+/* Variants */
 
 .more,
 .book-in {
@@ -509,10 +581,13 @@ img {
 }
 
 .variant-name {
+  outline: 1px solid #ff0000;
+  outline-offset: -1px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: var(--basic-black);
+  margin-left: 29px;
 }
 
 .variant-name:hover {
@@ -522,4 +597,69 @@ img {
 .variant-name:focus {
   color: var(--basic-black);
   opacity: 30%;
+}
+
+.variants .variant-row {
+  outline: 1px solid #ff0000;
+  display: grid;
+  grid-template-columns: 135px 1fr auto;
+}
+
+.variants {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+.row-1,
+.variant-info {
+  display: flex;
+}
+
+.variant-info {
+  margin-left: 29px;
+}
+
+.variant-info a {
+  outline: 1px solid #ff0000;
+}
+
+.stars {
+  outline: 1px solid #ff0000;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0;
+}
+
+.center p {
+  outline: 1px solid #ff0000;
+  margin: 0;
+}
+
+.right {
+  outline: 1px solid #ff0000;
+}
+
+.variant-rate {
+  outline: 1px solid rgba(255, 0, 0, 0.7);
+  text-align: center;
+  margin: 0;
+  background-color: var(--basic-light-grey);
+  padding: 3px 17px;
+  line-height: 21px;
+}
+
+.more,
+.book-in,
+.variant-price {
+  display: block;
+}
+
+.variant-type,
+.variant-price {
+  margin-top: 4px;
+  margin-bottom: 11px;
+}
+
+.column {
+  margin-left: 6px;
 }
