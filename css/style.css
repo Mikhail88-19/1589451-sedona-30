@@ -69,8 +69,7 @@ input[type=number]::-webkit-outer-spin-button {
 .all {
   width: 1200px;
   box-shadow: 0 5px 15px 0 rgba(0 , 1 , 1 , 0.2);
-  margin: 0 40px 0 40px;
-  /*margin: 0 auto;*/
+  margin: 0 auto;
   position: relative;
 }
 
@@ -96,7 +95,7 @@ img {
   display: grid;
 }
 
-/* Main Navigation */
+/* Site Navigation Wrapper */
 
 .main-navigation {
   font-size: 14px;
@@ -147,6 +146,25 @@ img {
   background-color: var(--basic-white);
 }
 
+/* Site Navigation a */
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+  color: var(--basic-light-blue);
+}
+
+.site-navigation a:focus {
+  color: var(--basic-black);
+  opacity: 30%;
+}
+
+.site-navigation a.active {
+  color: var(--basic-brown);
+}
+
 /* Container */
 
 .container {
@@ -191,26 +209,8 @@ img {
   margin-top: 77px;
 }
 
-/* Site Navigation */
-
-.site-navigation a {
-  color: var(--basic-black);
-}
-
-.site-navigation a:hover {
-  color: var(--basic-light-blue);
-}
-
-.site-navigation a:focus {
-  color: var(--basic-black);
-  opacity: 30%;
-}
-
-.site-navigation a.active {
-  color: var(--basic-brown);
-}
-
 .map {
+  width: 1200px;
   display: block;
 }
 
