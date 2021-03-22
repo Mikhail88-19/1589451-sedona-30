@@ -318,6 +318,7 @@ img {
 
 .search-main-heading {
   font-size: 30px;
+  line-height: 24px;
   font-weight: 700;
   text-align: center;
 }
@@ -364,34 +365,12 @@ img {
   transform: translateX(-50%);
 }
 
-.info-item {
-  margin: 0;
-}
-
-.info-item-date {
-  margin-top: 29px;
-  margin-bottom: 30px;
-}
-
-.check-in {
-  margin-left: 19px;
-}
-
-.check-out {
-  margin-left: 16px;
+.form-search label {
+  line-height: 26px;
 }
 
 .long-input {
   position: relative;
-}
-
-.short-inputs {
-  display: flex;
-  justify-content: space-between;
-}
-
-.short-inputs p {
-  margin: 0;
 }
 
 .ic-calendar {
@@ -415,6 +394,63 @@ img {
 
 .ic-calendar:focus {
   background-image: url("../img/ic-calendar-focus.svg");
+}
+
+.info-item {
+  margin: 0;
+}
+
+.info-item-date {
+  margin-top: 29px;
+  margin-bottom: 30px;
+}
+
+.info-item label {
+  /*line-height: 26px;*/
+  font-weight: 700;
+}
+
+.info-item input {
+  font: inherit;
+  color: var(--basic-black);
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--basic-light-grey);
+  border: none;
+  width: 334px;
+  height: 38px;
+  padding: 0;
+  padding-left: 12px;
+  line-height: 26px;
+}
+
+.info-item input:hover {
+  background-color: var(--basic-hover-grey);
+}
+
+.info-item input:focus {
+  background: none;
+  border: 2px solid var(--basic-focus-grey);
+  width: 332px;
+  height: 34px;
+  padding-left: 10px;
+}
+
+.check-in {
+  margin-left: 19px;
+}
+
+.check-out {
+  margin-left: 16px;
+}
+
+.short-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.short-inputs p {
+  margin: 0;
 }
 
 .input-wrap {
@@ -477,35 +513,6 @@ img {
 .search-heading,
 .search-info {
   text-align: center;
-}
-
-.info-item label {
-  font-weight: 700;
-}
-
-.info-item input {
-  font: inherit;
-  color: var(--basic-black);
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: var(--basic-light-grey);
-  border: none;
-  width: 334px;
-  height: 38px;
-  padding: 0;
-  padding-left: 12px;
-}
-
-.info-item input:hover {
-  background-color: var(--basic-hover-grey);
-}
-
-.info-item input:focus {
-  background: none;
-  border: 2px solid var(--basic-focus-grey);
-  width: 332px;
-  height: 34px;
-  padding-left: 10px;
 }
 
 .info-item input.info-item-kids:focus,
@@ -642,6 +649,10 @@ img {
   align-items: center;
   padding-top: 14px;
   padding-left: 66px;
+}
+
+.footer-copyright span {
+  line-height: 26px;
 }
 
 .footer-copyright .link-made-by {
