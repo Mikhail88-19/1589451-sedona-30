@@ -365,10 +365,6 @@ img {
   transform: translateX(-50%);
 }
 
-.form-search label {
-  line-height: 26px;
-}
-
 .long-input {
   position: relative;
 }
@@ -397,6 +393,8 @@ img {
 }
 
 .info-item {
+  displey: flex;
+  align-items: center;
   margin: 0;
 }
 
@@ -406,7 +404,7 @@ img {
 }
 
 .info-item label {
-  /*line-height: 26px;*/
+  line-height: 26px;
   font-weight: 700;
 }
 
@@ -467,11 +465,8 @@ img {
 }
 
 .main-wrap {
-  display: flex
-}
-
-.main-wrap label {
-  padding-top: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .ic-minus,
@@ -647,7 +642,7 @@ img {
 .footer-copyright {
   display: flex;
   align-items: center;
-  padding-top: 14px;
+  padding-top: 8px;
   padding-left: 66px;
 }
 
